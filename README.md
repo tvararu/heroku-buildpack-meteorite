@@ -4,19 +4,9 @@ This build pack allows you to easily deploy meteor apps to heroku using [meteori
 
 ## Usage
 
-```bash
-heroku create --stack cedar --buildpack https://github.com/oortcloud/heroku-buildpack-meteorite.git
-```
-
-Then `git push` to heroku as usual.
+See this gist: https://gist.github.com/tvararu/8504812.
 
 ## NOTES
-
-You need to set the `ROOT_URL` environment variable:
-
-```bash
-heroku config:add ROOT_URL=your.domain.com
-```
 
 You can specify meteor settings by setting the `METEOR_SETTINGS` environment variable:
 
@@ -25,4 +15,4 @@ heroku config:add METEOR_SETTINGS='{"herp":"derp"}'
 ```
 
 
-You need to have a verified account so the buildpack can add a `mongohq:sandbox` addon.
+You need to have a verified account so the script above can add a `mongolab:sandbox` addon.
